@@ -2,13 +2,13 @@ import './style.css'
 import buttonStyles from './button.module.css'
 import imageStyles from './image.module.css'
 import javascriptLogo from './javascript.svg'
-import vaiteLogo from '/vite.svg'
+import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 
 document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
-      <img src="${vaiteLogo}" class="${imageStyles.logo}" alt="Vite logo" />
+      <img src="${viteLogo}" class="${imageStyles.logo}" alt="Vite logo" />
     </a>
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
       <img src="${javascriptLogo}" class="${imageStyles.logo} ${imageStyles.vanilla}" alt="JavaScript logo" />
