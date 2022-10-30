@@ -1,4 +1,6 @@
 import './style.css'
+// import data, { user } from './data.json';
+import { user } from './data.json';
 import buttonStyles from './button.module.css'
 import imageStyles from './image.module.css'
 import javascriptLogo from './javascript.svg'
@@ -17,6 +19,7 @@ document.querySelector('#app').innerHTML = `
     <div class="card">
       <button id="counter" type="button"></button>
     </div>
+    <pre>${JSON.stringify(user)}</pre>
     <p class="read-the-docs btn">
       Click on the Vite logo to learn more
     </p>
