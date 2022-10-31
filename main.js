@@ -7,13 +7,15 @@ import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 
+import suma from './suma.ts'
+
 const modules = import.meta.glob('./modules/*.js')
 
 for (const path in modules) {
   modules[path]().then((module) => { module.load() })
 }
 
-console.log(modules)
+console.log(`Suma de 2 + 3 es: ${suma(2, 3)}`)
 
 document.querySelector('#app').innerHTML = `
   <div>
